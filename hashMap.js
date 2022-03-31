@@ -79,14 +79,14 @@ const searchMusicInResponsabilidade = (music) => {
   }
 };
 
-const activateNode = (id) => {
+const setActive = (id) => {
   chord[id].ativo = true;
   setReponsabilidade();
 };
 
 createList();
 
-activateNode(7)
+setActive(7)
 setReponsabilidade();
 
 searchMusicInResponsabilidade("musica5.mp3");
