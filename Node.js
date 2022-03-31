@@ -23,6 +23,10 @@ export default class Node {
     return this._active;
   }
 
+  set ativo(ativo) {
+    this._active = ativo;
+  }
+
   set id(id) {
     this._id = id;
   }

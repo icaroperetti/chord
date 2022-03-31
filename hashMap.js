@@ -13,6 +13,7 @@ const musicas = [
   null,
   ["musica5.mp3", "musica6.mp3", "musica7.mp3"],
   null,
+  ["musica8.mp3", "musica9.mp3", "musica10.mp3"],
   null,
   null,
   null,
@@ -22,7 +23,8 @@ const musicas = [
   null,
   null,
   null,
-  null,
+
+  ,
 ];
 
 const size = 10;
@@ -77,8 +79,14 @@ const searchMusicInResponsabilidade = (music) => {
   }
 };
 
+const activateNode = (id) => {
+  chord[id].ativo = true;
+  setReponsabilidade();
+};
+
 createList();
 
+activateNode(7)
 setReponsabilidade();
 
 searchMusicInResponsabilidade("musica5.mp3");
