@@ -65,7 +65,7 @@ const setReponsabilidade = () => {
   }
 };
 
-const searchMusicInResponsabilidade = (music) => {
+const searchMusic = (music) => {
   for (let j = 0; j < size; j++) {
     if (chord[j].ativo) {
       for (const musica of chord[j].musicas) {
@@ -89,6 +89,6 @@ createList();
 setActive(7)
 setReponsabilidade();
 
-searchMusicInResponsabilidade("musica5.mp3");
+searchMusic("musica5.mp3");
 
 console.log(chord);
