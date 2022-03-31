@@ -25,8 +25,7 @@ const musicas = [
   null,
 ];
 
-const size = 5;
-
+const size = 10;
 const createList = () => {
   for (let i = 0; i < size; i++) {
     if (i == 0) {
